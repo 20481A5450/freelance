@@ -3,7 +3,7 @@
     //If you want to add more images, add the link name and URL image URL in the array list below.
     const images_list = [
         {
-            "url": "https://www.html-code-generator.com/images/slider/1.png",
+            "url": "./Assets/Carousel1.jpeg",
             "alt": "",
             "name": "image 1",
             "link": ""

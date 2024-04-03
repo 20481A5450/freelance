@@ -99,34 +99,7 @@ nav {
   bottom: 20%;
   right: 21%;
 }
-@media (max-width: 600px) {
-  .btn-1 {
-    top: 32%;
-    left: 1%;
-  }
-  .btn-2{
-  top: 52%;
-    left: 11%;
-  }
-  .btn-3{
-    top: 30%;
-    right: 11%;
-  }
-  .btn-4{
-    bottom: 47%;
-    right: 1%;
-  }
-  .btn {
-    width: 80px;
-    padding: 0px;
-  }
-  .btn:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-    transition: 0.3s ease-in-out;
-    background-color: #fff;
-    color: #000;
-  }
-}
+
 
 /* Adjust other button positions as needed */
 
@@ -208,9 +181,9 @@ p {
 }
 .hcg-slides img {
   width: 100%;
-  /* max-width: 100%; */
-  /* max-height: 100%; */
+  background-position: top;
   display: inline-block;
+
 }
 .hcg-slide-text {
   color: #ffffff;
@@ -263,15 +236,18 @@ p {
 .hcg-slide-dot-control {
   margin-top: 10px;
   text-align: center;
+  padding: 10px;
+  margin: 10px;
 }
 .hcg-slide-dot {
   cursor: pointer;
-  height: 13px;
+  height: 15px;
   width: 13px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  
 }
 .hcg-slide-dot.dot-active {
   background-color: #717171;
@@ -324,7 +300,7 @@ p {
 
 .whyus {
   margin: 0 auto;
-  width: 1100px;
+  width: 90%;
   height: 1000px;
   /* border: 1px solid #fff;s */
   margin-top: 40px;
@@ -337,6 +313,7 @@ p {
   background-color: #030314;
   transition: all 0.5s;
   position: relative;
+  overflow: hidden;
 }
 
 .whyus:hover {
@@ -358,8 +335,8 @@ p {
   width: 259px;
   padding: 2px;
   position: absolute;
-  bottom: 34px;
-  left: 30px;
+  bottom: -4%;
+  left: 9%;
   background: none;
   margin-right: 818px;
   padding: 25px;
@@ -377,10 +354,10 @@ p {
 }
 .box2 {
   height: 211px;
-  width: 232px;
+  width: 230px;
   position: absolute;
-  right: 38px;
-  top: 185px;
+  right: 8%;
+  top: 9%;
   padding: 4px;
   line-height: 30.05px;
   overflow: hidden;
@@ -392,9 +369,8 @@ p {
   width: 259px;
   padding: 2px;
   position: absolute;
-  bottom: 468px;
-  left: -7px;
-  left: 12px;
+  bottom: 50%;
+  left: 6%;
   background: none;
   margin-right: 800px;
   padding: 25px;
@@ -406,13 +382,12 @@ p {
   width: 205px;
   padding: 2px;
   position: absolute;
-  right: 17px;
-  top: 661px;
-  left: 702px;
+  right: 13%;
+  top: 70%;
   background: none;
   margin-left: 130px;
   padding: 20px;
-  line-height: 31.05px;
+  line-height: 27.05px;
 }
 /* hags */
 .how-container {
@@ -522,7 +497,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .phone{
+  .phone {
     width: 200px;
     height: 65px;
     padding: 500px;
@@ -542,14 +517,13 @@ footer {
     padding: 0px;
     font-size: 12px;
   }
-  .mail span{
+  .mail span {
     font-size: 12px;
-
   }
-  .footer{
+  .footer {
     overflow: hidden;
   }
-  .contact{
+  .contact {
     overflow: hidden;
   }
 }
@@ -611,26 +585,20 @@ footer {
     border-radius: 20px;
   }
   /* Adjust other styles as needed */
-  .conta{
+  .conta {
     display: flex;
     flex-direction: row;
     height: 198px;
     overflow: hidden;
   }
-  .contact{
+  .contact {
     overflow: hidden;
     display: flex;
     flex-direction: row;
   }
 }
 
-@media (max-width: 480px) {
-  .whyus {
-    width: 100%;
-    margin-top: 10px;
-  }
-  /* Adjust other styles as needed */
-}
+
 @media (max-width: 1100px) {
   .how-container {
     flex-direction: column;
@@ -648,6 +616,13 @@ footer {
     margin-right: 0;
     padding: 0 20px;
   }
+  #hcg-slider-1 .hcg-slide-container {
+    width: 95%;
+    height: 15vh;
+    overflow-y: hidden;
+    border-radius: 50px;
+    background-position: center;
+  }
 }
 /* Continue from the previous CSS */
 
@@ -661,10 +636,9 @@ footer {
   }
   .whyus img {
     max-width: 100%;
-    
   }
 
-  .box1{
+  .box1 {
     overflow: hidden;
     position: absolute;
     font-size: 6px;
@@ -677,7 +651,7 @@ footer {
     /* border: 2px solid red; */
     margin: 10px;
   }
-  .box2{
+  .box2 {
     overflow: hidden;
     position: absolute;
     font-size: 6px;
@@ -690,7 +664,7 @@ footer {
     /* border: 2px solid red; */
     margin: 10px;
   }
-  .box3{
+  .box3 {
     overflow: hidden;
     position: absolute;
     font-size: 6px;
@@ -703,7 +677,7 @@ footer {
     /* border: 2px solid red; */
     margin: 10px;
   }
-  .box4{
+  .box4 {
     overflow: hidden;
     position: absolute;
     font-size: 6px;
@@ -715,7 +689,6 @@ footer {
     left: 237px;
     /* border: 2px solid red; */
     margin: 10px;
-  
   }
 }
 
@@ -728,5 +701,37 @@ footer {
   .whyus .img1,
   .whyus .img2 {
     margin-top: 30px;
+  }
+  .whyus {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .btn-1 {
+    top: 32%;
+    left: 1%;
+  }
+  .btn-2 {
+    top: 52%;
+    left: 11%;
+  }
+  .btn-3 {
+    top: 30%;
+    right: 11%;
+  }
+  .btn-4 {
+    bottom: 47%;
+    right: 1%;
+  }
+  .btn {
+    width: 80px;
+    padding: 0px;
+  }
+  .btn:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    color: #000;
   }
 }
